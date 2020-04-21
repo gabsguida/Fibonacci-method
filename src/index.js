@@ -11,7 +11,7 @@ const fibonacciUntil = (number) => {
 }
 
 
-const fibonacci = (number=350) => {
+const fibonacci = () => {
     return fibonacciUntil(350);    
 }
 
