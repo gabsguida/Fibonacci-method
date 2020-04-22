@@ -1,6 +1,6 @@
 'use strict'
 
-const fibonacciUntil = (number) => {
+const fibonacci = (number = 350) => {
     let arr = [0,1];
     let sum = 0;
     while (sum < number){
@@ -10,15 +10,7 @@ const fibonacciUntil = (number) => {
     return arr;
 }
 
-
-const fibonacci = () => {
-    return fibonacciUntil(350);    
-}
-
-const isFibonnaci = (num) => {
-    let arrFibonacci = fibonacci();
-    return arrFibonacci.includes(num);
-}
+const isFibonnaci = (num) => fibonacci().includes(num);
 
 module.exports = {
     fibonacci,
